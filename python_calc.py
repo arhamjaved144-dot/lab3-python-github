@@ -1,13 +1,21 @@
 def add(a, b):
     return a + b
+
+
 def subtract(a, b):
     return a - b
+
+
 def multiply(a, b):
     return a * b
+
+
 def divide(a, b):
     if b == 0:
         return None
     return a / b
+
+
 def check_even_odd(number):
     if number % 2 == 0:
         return "even"
@@ -18,7 +26,7 @@ def calculate_percentage(obtained, total):
     return (obtained / total) * 100
 def main():
     while True:
-        print("\nCalculator menu:")
+        print(" Calculator menu= ")
         print("1. Addition")
         print("2. Subtraction")
         print("3. Multiplication")
@@ -34,7 +42,7 @@ def main():
             continue
 
         if choice == 7:
-            print("Leaving the calculator. Goodbye!")
+            print("Leaving the calculator, Goodbye!")
             break
 
         elif choice in (1, 2, 3, 4):
@@ -42,7 +50,7 @@ def main():
                 number_1 = float(input("Enter your first number: "))
                 number_2 = float(input("Enter your second number: "))
             except ValueError:
-                print("Please enter valid numbers.")
+                print("Kindly enter valid numbers.")
                 continue
 
             if choice == 1:
